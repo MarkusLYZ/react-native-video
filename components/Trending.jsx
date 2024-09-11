@@ -45,6 +45,11 @@ const TrendingItem = ({ activeItem, item }) => {
           useNativeControls
           shouldPlay
           onPlaybackStatusUpdate={(status) => {
+            console.log('Playback status:', status);
+            console.log('uri:', item.video);
+            if (status.error) {
+              console.error('Playback error:', status.error);
+            }
             if (status.didJustFinish) {
               setPlay(false);
             }

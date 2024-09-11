@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { StatusBar } from "expo-status-bar";
 import { FlatList, Image, RefreshControl, Text, View } from "react-native";
 
 import { images } from "../../constants";
@@ -78,6 +79,7 @@ const Home = () => {
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
       />
+      <StatusBar backgroundColor="#161622" style="light" />
     </SafeAreaView>
   );
 };

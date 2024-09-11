@@ -1,5 +1,5 @@
 {
-  "name": "react-native-videoApp",
+  "name": "react-native-video-app",
   "version": "1.0.0",
   "main": "expo-router/entry",
   "scripts": {
@@ -24,6 +24,7 @@
     "react-native-screens": "3.31.1",
     "react-native-url-polyfill": "^2.0.0",
     "react-native-video": "file:",
+    "react-native-video-app": "file:",
     "react-native-videoApp": "file:",
     "videoApp": "file:"
   },
