@@ -7,9 +7,9 @@ import { icons } from "../constants";
 import { router, usePathname } from "expo-router";
 import { Query } from "react-native-appwrite";
 
-const SearchInput = () => {
+const SearchInput = ({initialQuery}) => {
   const pathname = usePathname();
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(initialQuery||'');
   return (
     <View className="border-2 border-black-200 rounded-2xl focus:border-secondary 2-full h-16 px-4 bg-black-100 items-center flex-row space-x-4">
       <TextInput
