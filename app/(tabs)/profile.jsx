@@ -14,12 +14,12 @@ import { TouchableOpacity } from "react-native";
 import InfoBox from "../../components/InfoBox";
 
 const Profile = () => {
-  const { user, setUser, setIsLoggedIn } = useGlobalContext();
+  const { user, setUser, setIsLogged } = useGlobalContext();
   const { data: posts } = useAppwrite(() => getUserPosts(user.$id));
   const logout = async () => {
     await signOut();
     setUser(null);
-    setIsLoggedIn(false);
+    setIsLogged(false);
     router.replace('/sign-in');
   };
   return (
