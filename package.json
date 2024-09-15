@@ -27,7 +27,8 @@
     "react-native-video": "file:",
     "react-native-video-app": "file:",
     "react-native-videoApp": "file:",
-    "videoApp": "file:"
+    "videoApp": "file:",
+    "expo-image-picker": "~15.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
